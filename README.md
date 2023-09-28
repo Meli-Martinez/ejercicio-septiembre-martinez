@@ -1,8 +1,14 @@
-# React + Vite
+# Ejercicio Septiembre - SetUp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Clone y npm
+`
+git clone https://github.com/Meli-Martinez/ejercicio-septiembre-martinez.git
+cd ejercicio-septiembre-martinez
+npm i sass
+`
+## Ramas
+### Main
+Esta rama conntiene el código realizado en clase
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Fixing
+Esta rama contiene el código mejorado realizado luego de la clase
