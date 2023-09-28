@@ -9,8 +9,8 @@ cd ejercicio-septiembre-martinez
 npm i sass
 ```
 ## Ramas
-### Main
+### main
 Esta rama conntiene el código realizado en clase
 
-### Fixing
+### feature-finxing
 Esta rama contiene el código mejorado realizado luego de la clase
