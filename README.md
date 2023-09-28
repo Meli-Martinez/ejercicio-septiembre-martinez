@@ -3,7 +3,9 @@
 ## Clone y npm
 ```bash
 git clone https://github.com/Meli-Martinez/ejercicio-septiembre-martinez.git
+
 cd ejercicio-septiembre-martinez
+
 npm i sass
 ```
 ## Ramas
