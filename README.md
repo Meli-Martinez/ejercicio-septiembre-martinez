@@ -12,5 +12,5 @@ npm i sass
 ### main
 Esta rama conntiene el código realizado en clase
 
-### feature-finxing
+### feature-fixing
 Esta rama contiene el código mejorado realizado luego de la clase
