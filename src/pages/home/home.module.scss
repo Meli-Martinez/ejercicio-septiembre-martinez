@@ -1,0 +1,25 @@
+.container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #c68fcb;
+  border-radius: 10px;
+  padding: 1.5rem;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+.link_1, .link_2 {
+  color: #4b304d;
+}
+
+.link_1 {
+  margin-right: 2rem;
+}
+
+.link_1:hover {
+  color: white;
+}
+.link_2:hover {
+  color: white;
+}

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import styles from "./three-users.module.scss";
 
@@ -58,6 +59,7 @@ const ThreeUsers = () => {
           </ul>
         </>
       )}
+      <Link to="/" className={styles.link}>Vovler</Link>
     </div>
   );
 };

@@ -29,3 +29,16 @@
     }
   }
 }
+
+.link {
+  font-weight: 600;
+  color: #224a12;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.link:hover {
+  color: white;
+  background-color: #123310;
+  cursor: pointer;
+}
