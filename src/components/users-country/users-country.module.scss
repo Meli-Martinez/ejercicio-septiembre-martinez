@@ -1,0 +1,39 @@
+.container {
+  background-color: #9cbedc;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 4rem 1.5rem 0;
+
+    p {
+      font-weight: bold;
+      color: #102333;
+    }
+  }
+}
+
+.link {
+  font-weight: 600;
+  color: #234b6c;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.link:hover {
+  color: white;
+  background-color: #102333;
+  cursor: pointer;
+}

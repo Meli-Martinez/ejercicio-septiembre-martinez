@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+
+import styles from "./users-country.module.scss";
 
 const UsersCountry = () => {
   const { idPais } = useParams();
   const [ users, setUsers ] = useState([]);
 
   useEffect(() => {
-    fetch(`https://randomuser.me/api/?${idPais}`)
+    fetch(`https://randomuser.me/api/?nat=${idPais}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -22,14 +24,36 @@ const UsersCountry = () => {
   }, [idPais]);
 
   return (
-    <div>
+    <div className={styles.container}>
       {users.results && users.results.map(user =>
-        <>
-          <p>Name: {user.name.first}</p>
-          <p>Last Name: {user.name.last}</p>
-          <p>Email: {user.email}</p>
-        </>
+        <ul className={styles.infoContainer}>
+          <li>
+            <p>Name:</p> 
+            {user.name.first}
+          </li>
+          <li>
+            <p>Last Name:</p> 
+            {user.name.last}
+          </li>
+          <li>
+            <p>Email:</p> 
+            {user.email}
+          </li>
+          <li>
+            <p>Country:</p> 
+            {user.location.country}
+          </li>
+          <li>
+            <p>Photo:</p> 
+            <img src={user.picture.medium} alt={`${user.name.first}`}/>
+          </li>
+          <li>
+            <p>Phone:</p> 
+            {user.phone}
+          </li>
+        </ul>
       )}
+      <Link to="/" className={styles.link}>Vovler</Link>
     </div>
   );
 };
