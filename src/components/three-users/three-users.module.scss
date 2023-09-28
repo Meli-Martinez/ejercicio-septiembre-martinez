@@ -1,0 +1,31 @@
+.container {
+  background-color: #a5dc9c;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+
+  h2 {
+    padding: 2rem 0 1rem 0;
+    color: #081702;
+  }
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 4rem 1.5rem 0;
+
+    p {
+      font-weight: bold;
+      color: #123310;
+    }
+  }
+}

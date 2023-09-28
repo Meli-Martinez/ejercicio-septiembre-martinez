@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+import styles from "./three-users.module.scss";
+
 const ThreeUsers = () => {
   const [ users, setUsers ] = useState([]);
 
@@ -21,13 +23,39 @@ const ThreeUsers = () => {
     fetchUsers();
   }, []);
 
+  let i = 1;
+  
   return (
-    <div>
+    <div className={styles.container}>
       {users.results && users.results.map(user =>
         <>
-          <p>Name: {user.name.first}</p>
-          <p>Last Name: {user.name.last}</p>
-          <p>Email: {user.email}</p>
+        <h2>User number: {i++}</h2>
+          <ul className={styles.infoContainer}>
+            <li>
+              <p>Name:</p> 
+              {user.name.first}
+            </li>
+            <li>
+              <p>Last Name:</p> 
+              {user.name.last}
+            </li>
+            <li>
+              <p>Email:</p> 
+              {user.email}
+            </li>
+            <li>
+              <p>City:</p> 
+              {user.location.country}
+            </li>
+            <li>
+              <p>Photo:</p> 
+              <img src={user.picture.medium} alt={`${user.name.first}`}/>
+            </li>
+            <li>
+              <p>Phone:</p> 
+              {user.phone}
+            </li>
+          </ul>
         </>
       )}
     </div>
